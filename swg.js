@@ -1,11 +1,11 @@
 const prompt = require('prompt-sync')({ sigint: true })
 
-let m = "y";
 
 var playerscore = 0;
 
 var cscore = 0;
 
+let m = "y";
 while (m === "y" || m === "Y") {                
 
     let a = parseInt(Math.random() * 3);
