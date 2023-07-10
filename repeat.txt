@@ -1,4 +1,0 @@
-let m = "y";
-while (m === "y" || m === "Y") {                
-    m = prompt("Enter y to play again any other key to terminate the game: ")
-}
