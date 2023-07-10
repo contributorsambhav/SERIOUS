@@ -30,6 +30,9 @@ for (i = chances; i > 0; i--) {
 let scr = 16 - chances
 console.log(`great your score is ` + scr)
 let n = prompt("Enter your name: ")
+if(n==""){
+n="Anonymous"
+}
 const fs = require("fs")
 
 fs.appendFile('hiscore.txt', `${n} scored ${scr} on `+new Date()+"\n  \n", function (err) {
