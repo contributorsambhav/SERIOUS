@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <script src="todo.js"></script>
     <title>Document</title>
 </head>
 
 <body class="bg-slate-900">
-    <div class="border-dashed border-4 p-4 pl-8  border-black h-fit  text-white text-3xl mx-auto w-[70%] min-h-[60vh] mt-20 bg-emerald-500 ">
-        <div class=" mt-8text-center">
-            List of work for today :-
-            <br>
+    <div
+        class="border-double border-4 p-4 pl-8 pb-12  border-black h-fit  text-white text-3xl mx-auto w-[70%] min-h-[80vh]  mt-20 bg-emerald-500 ">
+        <div class=" text-center"><b><u>List of work for today :-
+                    <br> <br> </u></b>
         </div>
-        <ul  type="disc"  id="todo"></ul>
+        <ul type="disc" id="todo"></ul>
+        <div>
+            <button
+                class='mr-4  text-center text-xl bg-slate-900 border-dashed border-2 w-[95px] p-[1px] rounded-lg float-right'
+                onclick="let point = prompt('Enter a point') 
+            todo.innerHTML = todo.innerHTML + ` <li type='disc'> ${point} </li>`
+             ">ADD</button><br>
+            <button class='mr-4 text-xl bg-slate-900 border-dashed border-2 w-[95px] p-[1px] rounded-lg float-right'
+                onclick="todo.innerHTML=''">CLEAR</button><br>
+        </div>
     </div>
-    <script src="todo.js"></script>
-
 </body>
 
 </html>
