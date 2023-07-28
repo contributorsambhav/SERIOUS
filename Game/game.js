@@ -15,9 +15,15 @@ let player = {
   velocityY: 0,
 };
 
+let marioImage = new Image();
+marioImage.src = "mario.png";
+
+marioImage.onload = function () {
+  update();
+};
+
 function drawPlayer() {
-  ctx.fillStyle = "red";
-  ctx.fillRect(player.x, player.y, player.width, player.height);
+  ctx.drawImage(marioImage, player.x, player.y, player.width, player.height);
 }
 
 function update() {
@@ -56,5 +62,4 @@ document.addEventListener("keyup", (event) => {
     player.velocityX = 0;
   }
 });
-
-update();
+update(;)
