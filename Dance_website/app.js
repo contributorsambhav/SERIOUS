@@ -63,6 +63,26 @@ app.post("/",((req,res)=>{
     res.status(200).render("index.pug",parameters)
 
 }))
+
+
+app.get("/about",((req,res)=>{
+
+       res.status(200).render("about.pug")
+
+}))
+
+app.get("/contact",((req,res)=>{
+
+    res.status(200).render("contact.pug")
+
+}))
+
+app.get("/form",((req,res)=>{
+
+    res.status(200).render("form.pug")
+
+}))
+
 // Note : parameters is an object that assigns title as given string and content is read from the avriablr con
 
 
