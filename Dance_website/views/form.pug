@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="full bg-gradient-to-tl from-emerald-400 to-blue-100">
+    <div class="full pb-10 bg-gradient-to-tl from-emerald-400 to-blue-100">
         <nav class="bg-violet-600 flex-row align-middle font-semibold text-white">
             <ul class="list-none  flex  ">
                 <li class="mx-4 py-1 hover:b"><a href="/">Home</a></li>
@@ -41,10 +41,20 @@
                     <option value="Female">Female</option>
                 </select>
                 <br>
-                <input class="mx-[5vw] outline-2 outline-blue-200 rounded-lg my-3 border-2  p-2  w-[40VW] border-slate-600" type="textarea" name="more" id="more" placeholder="Tell us more about you" /><br>
+                <input class="mx-[5vw] outline-2 outline-blue-200 rounded-lg mb-2 mt-0 border-2  p-2  w-[40VW] border-slate-600" type="textarea" name="more" id="more" placeholder="Tell us more about you " /><br><br>
 
-                <button type="button" onkeypress="alert('Details Submitted Successfully')" class=" my-8 border-2 bg-[#1db94b] text-white text-xl w-[20vw] font-medium font-mono p-1   mx-[15vw] rounded-2xl border-slate-600" class="btn">cancel</button>
+                <hr class="p-[0.5px] bg-gray-500">
 
+                <div class="buttons mx-[2.0vw]">
+
+                    
+                    <button type='submit' onclick='alert("Details Submitted")' class=" border-2 bg-[#1db94b] text-white text-xl w-[20vw] font-medium font-mono p-1 mt-3  rounded-2xl border-slate-600 " class="btn">Submit</button>
+                    
+                    
+                    
+                    <button type="button "  class="border-2 bg-[#1c241e] text-white text-xl w-[25vw] font-medium font-mono p-1 mt-3  rounded-2xl border-slate-600"><a href="/">Return to home</a></button>
+                    
+                </div>
             </form>
         </div>
     </div>
