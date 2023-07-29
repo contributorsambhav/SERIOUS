@@ -2,7 +2,7 @@ const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
 const GRAVITY = 1;
-const JUMP_FORCE = 25;
+const JUMP_FORCE = 35;
 const FRICTION = 0.8; // Friction to slow down movement at hard borders
 
 let isJumping = false;
