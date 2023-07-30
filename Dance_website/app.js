@@ -4,7 +4,6 @@ const port = 80;
 const path = require('path')
 const fs = require('fs')
 const mongoose = require('mongoose');
-const bodyparser = require("body-parser")
 
 main().catch(err => console.log(err));
 
@@ -95,18 +94,19 @@ app.post("/",((req,res)=>{
 
     fs.appendFileSync('Registrations.txt',writeOutput)
 
-    res.status(200).render("index.pug",objname,objage,objphone,objemail,objaddress,objgender,objmore)
+    res.status(200).render("index.pug")
 
 
     //creating document using predeclared schema
     const objcontact = new contact({
-    name: objname,
-    gender : objgender,
-    age: objage ,
-    phone:objphone ,
-    email :objemail,
-    address: objaddress,
-    moredetails :objmore 
+
+        name: objname,
+        gender : objgender,
+        age: objage ,
+        phone:objphone ,
+        email :objemail,
+        address: objaddress,
+        moredetails :objmore 
 
 
     });
