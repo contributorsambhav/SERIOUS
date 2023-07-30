@@ -25,6 +25,12 @@ db.once("open", function () {
 
 const contactschema = new mongoose.Schema({
     name: String,
+    age: String ,
+    gender : String,
+    phone:String ,
+    email :String,
+    address: String,
+    moredetails :String 
 
 
 });
@@ -89,8 +95,24 @@ app.post("/",((req,res)=>{
 
     fs.appendFileSync('Registrations.txt',writeOutput)
 
-    const parameters ={"message": "Info submitted succesfully"}
-    res.status(200).render("index.pug",parameters)
+    res.status(200).render("index.pug",objname,objage,objphone,objemail,objaddress,objgender,objmore)
+
+
+    //creating document using predeclared schema
+    const objcontact = new contact({
+    name: objname,
+    gender : objgender,
+    age: objage ,
+    phone:objphone ,
+    email :objemail,
+    address: objaddress,
+    moredetails :objmore 
+
+
+    });
+    //saving the document
+    objcontact.save()
+
 
 }))
 
