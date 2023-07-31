@@ -26,3 +26,30 @@ The name of client is Clean
  Email : 0 
  Address : 0 
  
+The name of client is then alert 
+ Age is  
+ Gender is Male 
+ Some more info is that  "  " 
+ Some contact details are 
+ Phone no. :  
+ Email :  
+ Address :  
+ 
+The name of client is then console 
+ Age is  
+ Gender is Male 
+ Some more info is that  "  " 
+ Some contact details are 
+ Phone no. :  
+ Email :  
+ Address :  
+ 
+The name of client is thenconsoleinspect 
+ Age is  
+ Gender is Male 
+ Some more info is that  "  " 
+ Some contact details are 
+ Phone no. :  
+ Email :  
+ Address :  
+ 
