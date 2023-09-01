@@ -44,7 +44,7 @@ app.set('views',path.join(__dirname,'views'))
 app.get("/",((req,res)=>{
     const con = "This is text content saved as variable"
     const parameters ={"title": "This is title as object","content":con}
-    res.status(200).render("login.pug",parameters)
+    res.status(200).render("index.pug",parameters)
 }))
 
 app.post("/",((req,res)=>{
