@@ -30,4 +30,19 @@ function handleButtonClick() {
     
     
     
+function copyHandler(){
+
+    // Text to be copied to the clipboard
+    const textToCopy = passwd.innerHTML;
     
+    // Use the Clipboard API to write text to the clipboard
+    navigator.clipboard.writeText(textToCopy)
+    .then(function () {
+        // Successful copy
+        alert("Password copied to clipboard ");
+      })
+      .catch(function (err) {
+          // Handle errors
+          console.error("Unable to copy to clipboard: ", err);
+        });
+    };
