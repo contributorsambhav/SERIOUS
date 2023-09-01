@@ -1,0 +1,31 @@
+body {
+  background-color: antiquewhite;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-gap: 10px; */
+  width: 72vh;
+  /* margin-bottom: 20px; */
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5vh;
+}
+
+.cell {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  width: 24vh;
+  height: 24vh;
+  background-color: aliceblue;
+  text-size-adjust: 70px;
+}
+
+.heading{
+    font-weight: 900;
+}
