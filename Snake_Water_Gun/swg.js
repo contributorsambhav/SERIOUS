@@ -24,22 +24,22 @@ while (m === "y" || m === "Y") {
 
     // console.log(b)
 
-    let c = prompt("Choose either Snake (or S),Water (or W) or Gun (or G) : ")
+    let c = prompt("Choose either Snake,Water or Gun : ")
 
     c = c.toLowerCase()
 
-    if (c != "snake" && c != "s"
-        && c != "water" && c != "w"
-        && c != "gun" && c != "g") {
+    if (c != "snake"
+        && c != "water"
+        && c != "gun") {
         console.error("Kya kar rha hai tu \n Sudhar jaa ****");
     }
 
     else {
         console.log("Computer chose", b);
         console.log("You chose", c);
-        if ((b == "snake" && (c == "gun" || c == "g")) ||
-            (b == "water" && (c == "snake" || c == "s")) ||
-            (b == "gun" && (c == "water" || c == "w"))) {
+        if ((b == "snake" && c == "gun" ) ||
+            (b == "water" && c == "snake" ) ||
+            (b == "gun" && c == "water" )) {
             console.log("You won")
             playerscore += 1;
         } else if (b == c) {

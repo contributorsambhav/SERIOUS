@@ -62,8 +62,45 @@ app.post("/",((req,res)=>{
     const parameters ={"message": "Info submitted succesfully"}
     res.status(200).render("index.pug",parameters)
 
+
+
+    const mongoose = require('mongoose');
+
+    main().catch(err => console.log(err));
+    
+    async function main() {
+      await mongoose.connect('mongodb://127.0.0.1:27017/detail');
+    
+    }
+    
+    const detailSchema = new mongoose.Schema({
+        name: String,
+        age : String,
+        gender : String,
+        more : String
+    
+      });
+    
+    
+      const details = mongoose.model('details',detailSchema);
+    
+      const member = new details({ 
+        name: objname,
+        age : objage,
+        gender:objgender,
+        more:objmore
+     });
+    async function save (){
+        await member.save()
+    }
+    
+
+
 }))
 // Note : parameters is an object that assigns title as given string and content is read from the avriablr con
+
+
+
 
 
 //starting the server
