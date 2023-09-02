@@ -69,7 +69,7 @@ app.post("/",((req,res)=>{
     main().catch(err => console.log(err));
     
     async function main() {
-      await mongoose.connect('mongodb://127.0.0.1:27017/detail');
+      await mongoose.connect('mongodb://localhost:27017/Details');
     
     }
     
@@ -93,6 +93,7 @@ app.post("/",((req,res)=>{
     async function save (){
         await member.save()
     }
+    save()
     
 
 
