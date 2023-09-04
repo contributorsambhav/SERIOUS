@@ -6,6 +6,7 @@ const users = {}
 
 io.on('connection',socket=>{
     socket.on('new-user-joined',name=>{
+        console.log("New user",name)
         user[socket.id]=name;
         socket.broadcast.emit('user-joined',name)
     });

@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ichat realtime node socket.io</title>
-    <script src="js/client.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+
+    <script src="js/client.js"></script>
+
 
 </head>
 <body class="bg-gradient-to-b from-blue-700 to-blue-50">
@@ -21,7 +25,7 @@
     <div class="send m-4 p-2 border-2 border-black border-solid rounded-lg">
         <form action="#" id="sendcontainer">
             <input class="rounded-md w-[60vw] mx-[1vw] px-4 h-12" type="text" name="messageInp" id="messageInp"></input>
-            <button class="btn font-bold text-[3.5vh] border-2 border-black my-auto rounded-lg float-right w-[25vw] text-white h-12 bg-green-600 " type="submit">Send</button>
+            <button class="btn font-semibold text-[4.5vh] border-2 border-black my-auto rounded-lg float-right w-[25vw] text-white h-12 bg-green-600 " type="submit">Send</button>
         </form>
     </div>
 </body>
