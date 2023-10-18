@@ -4,7 +4,7 @@ chances = 15
 
 console.log(`you have ${chances} chances`)
 
-let a = parseInt(Math.random() * 101);
+let a = parseInt((Math.random() * 100)+1);
 // console.log(a);
 
 
