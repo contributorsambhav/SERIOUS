@@ -30,11 +30,13 @@ nav{
 }
 
 .bg{
-    background-image: url("banner_banner2.png");
-    width: 100vw;
+    background-image: url("banner_banner50vw.png");
+    width: 100%;
     background-repeat: repeat-y;
     min-height: 86vh;
     position: fixed;
+    background-size: cover;
+
    
  }
 
@@ -47,19 +49,22 @@ nav{
     font-size: xx-large;
     font-family: sans-serif,Verdana, Geneva;
     font-weight: 600;
-    color: whitesmoke;
+    color: white;
+   
     width:100vw;
+    padding-top: 10px; ;
 }
 
 .outer{
     padding: 8px;
     position: relative;
  
-    margin-left: 15vw;
-    margin-right: 15vw;
-    border-left: 5px double slateblue ;
-    border-right: 5px double slateblue ;
-    border-bottom: 5px double slateblue ;
+   
+    width: 35vw;
+    border-left: 5px double black ;
+    border-right: 5px double black ;
+    border-bottom: 5px double black ;
+    margin-left: 4vw;
   
     height: 60vh;
 
@@ -92,34 +97,41 @@ nav{
     align-items: right;
     display: flex;
     opacity: 1;
+    
 
 
 
 }
 
 .headtitle{
-    margin-left: 18.4%;
-    margin-right: 18.4%;
+    
+    margin-left: 13.7%;
+    margin-right: 13.7%;
+    font-size: xx-large;
 }
 
 .opaque{
     padding: 8px;
     position: relative;
-    
-    margin-left: 15vw;
-    margin-right: 15vw;
-    border-left: 5px double slateblue;
-    border-right: 5px double slateblue ;
-    border-top: 5px double slateblue ;
+    margin-left: 4vw;
 
+    
+    width: 35vw;
+    border-left: 5px double black;
+    border-right: 5px double black ;
+    border-top: 5px double black ;
+    color: antiquewhite;
     margin-top:5vh ;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: fit-content;
+    
 
 }
 
 .outer {
     font-family: Arial, sans-serif;
+   
+    
 }
 
 .ticket-form {
@@ -136,19 +148,29 @@ nav{
 }
 
 input, select {
-    padding: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;;
     border: 1px solid #ccc;
     border-radius: 5px;
+    outline: #0056b3 solid 2px;
 }
 
+input:focus {
+    border: 2px solid blue; /* Change the border color to blue when the input is clicked */
+  }
+
+
 .book-ticket-button {
-    width: inherit;
+    width: 70%;
     padding: 10px;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .book-ticket-button:hover {
