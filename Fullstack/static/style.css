@@ -1,0 +1,132 @@
+/* Resetting default margin and padding for all elements */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the navigation menu */
+ul {
+    list-style: none;
+    display: flex; /* Change to flex to align menu items horizontally */
+    justify-content: center; /* Center-align menu items */
+    background-color: blueviolet;
+    padding: 8px 0;
+    font-weight: 500;
+    color: white;
+}
+
+li {
+    margin: 0 10px;
+    padding: 5px 8px;
+    font-size: x-large;
+    display: inline;
+}
+
+/* Styling for the background image */
+.bg {
+    background-image: url("banner_banner50vw.png");
+    width: 100%;
+    background-repeat: repeat-y;
+    min-height: 86vh;
+    background-size: cover;
+    position: fixed;
+}
+
+/* Styling for the "WELCOME TO BUSQUERY" text */
+.top {
+    text-align: center;
+    height: 7vh;
+    background: linear-gradient(to right, violet, rgb(109, 109, 204));
+    font-size: xx-large;
+    font-family: sans-serif, Verdana, Geneva;
+    font-weight: 600;
+    color: white;
+    width: 100vw;
+    padding-top: 10px;
+}
+
+/* Styling for the main content container */
+.outer {
+    padding: 8px;
+    position: relative;
+    width: 35vw;
+    margin: 5vh 4vw 0 4vw; /* Simplify margin property */
+    border: 5px double black;
+    height: 60vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the heading section */
+.head {
+    font-size: 50px;
+    text-align: center;
+    color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for the GT logo */
+.GT {
+    display: inline-block;
+    margin-right: 0;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+/* Styling for the logo */
+.logo {
+    display: inline-block;
+    align-items: flex-end;
+    display: flex;
+    opacity: 1;
+}
+
+/* Styling for the heading title */
+.headtitle {
+    font-size: xx-large;
+    margin: 0 13.7%;
+}
+
+/* Styling for the opaque content container */
+.opaque {
+    padding: 8px;
+    position: relative;
+    width: 35vw;
+    border: 5px double black;
+    color: antiquewhite;
+    margin-top: 5vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: fit-content;
+}
+
+/* Common styles for form elements */
+input, select {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: #0056b3 solid 2px;
+    width: 100%;
+}
+
+input:focus {
+    border: 2px solid blue;
+}
+
+/* Styling for the "Book Ticket" button */
+.book-ticket-button {
+    width: 70%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Hover effect for the button */
+.book-ticket-button:hover {
+    background-color: #0056b3;
+}
