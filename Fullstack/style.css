@@ -55,13 +55,66 @@ nav{
     padding: 8px;
     background-color: rgb(205, 221, 237);
     position: relative;
-    margin-top:6vh ;
-    margin-bottom: 10vh;
+ 
     margin-left: 15vw;
     margin-right: 15vw;
-    border: 5px double slateblue ;
+    border-left: 5px double slateblue ;
+    border-right: 5px double slateblue ;
+    border-bottom: 5px double slateblue ;
     opacity: 0.6;
-    height: 70vh;
+    height: 60vh;
 
     
+}
+
+.head{
+    font-size: 50px;
+    align-items: center;
+    opacity: 1;
+    text-align: center;
+    display: flex;
+    color: blue;
+    flex-direction: right;
+    
+}
+
+.GT{
+    display: inline-block;
+    
+    opacity: 1;
+    align-items: center;
+    margin-right: 0;
+    justify-content: center;
+
+}
+
+.logo{
+    display: inline-block;
+    align-items: right;
+    display: flex;
+    opacity: 1;
+
+
+
+}
+
+.headtitle{
+    margin-left: 18.4%;
+    margin-right: 18.4%;
+}
+
+.opaque{
+    padding: 8px;
+    position: relative;
+    
+    margin-left: 15vw;
+    margin-right: 15vw;
+    border-left: 5px double slateblue;
+    border-right: 5px double slateblue ;
+    border-top: 5px double slateblue ;
+
+    margin-top:5vh ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: fit-content;
+
 }
