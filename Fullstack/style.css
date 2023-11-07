@@ -23,5 +23,27 @@ nav{
     color: white;
     padding-top: 8px;
     padding-bottom: 8px;
+    border-bottom: 1px solid black;
+    font-weight: 500;
 
+}
+
+.bg{
+    background-image: url("banner_banner2.png");
+    width: 100vw;
+    background-repeat: repeat-y;
+    min-height: 86vh;
+    opacity: 0.8;
+ }
+
+.top{
+    text-align: center;
+    height:7vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right,violet,rgb(109, 109, 204));
+    font-size: xx-large;
+    font-family:  Tahoma, sans-serif,Verdana, Geneva;
+    font-weight: 700;
+    color: rgb(221, 255, 221);
 }
