@@ -45,15 +45,14 @@ nav{
     margin-right: auto;
     background-image: linear-gradient(to right,violet,rgb(109, 109, 204));
     font-size: xx-large;
-    font-family:  Tahoma, sans-serif,Verdana, Geneva;
-    font-weight: 700;
-    color: rgb(221, 255, 221);
+    font-family: sans-serif,Verdana, Geneva;
+    font-weight: 600;
+    color: whitesmoke;
     width:100vw;
 }
 
 .outer{
     padding: 8px;
-    background-color: rgb(205, 221, 237);
     position: relative;
  
     margin-left: 15vw;
