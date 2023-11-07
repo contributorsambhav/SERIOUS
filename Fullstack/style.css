@@ -60,7 +60,7 @@ nav{
     border-left: 5px double slateblue ;
     border-right: 5px double slateblue ;
     border-bottom: 5px double slateblue ;
-    opacity: 0.6;
+  
     height: 60vh;
 
     
@@ -116,4 +116,41 @@ nav{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: fit-content;
 
+}
+
+.outer {
+    font-family: Arial, sans-serif;
+}
+
+.ticket-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.book-ticket-button {
+    width: inherit;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book-ticket-button:hover {
+    background-color: #0056b3;
 }
