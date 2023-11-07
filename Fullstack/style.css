@@ -1,0 +1,27 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+    display: inline;
+}
+li{
+    display: inline;
+    font-size: x-large;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+nav{
+    background-color: blueviolet;
+    font-weight: 500;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+}
