@@ -1,120 +1,170 @@
-/* Resetting default margin and padding for all elements */
-body {
+
+body{
     margin: 0;
     padding: 0;
 }
-
-/* Styling for the navigation menu */
-ul {
+ul{
     list-style: none;
-    display: flex; /* Change to flex to align menu items horizontally */
-    justify-content: center; /* Center-align menu items */
-    background-color: blueviolet;
-    padding: 8px 0;
-    font-weight: 500;
-    color: white;
-}
-
-li {
-    margin: 0 10px;
-    padding: 5px 8px;
-    font-size: x-large;
     display: inline;
 }
+li{
+    display: inline;
+    font-size: x-large;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
 
-/* Styling for the background image */
-.bg {
+nav{
+    background-color: blueviolet;
+    font-weight: 500;
+   
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid black;
+    font-weight: 700;
+    width:100vw;
+    text-decoration: double;
+   
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bg{
     background-image: url("banner_banner50vw.png");
     width: 100%;
     background-repeat: repeat-y;
     min-height: 86vh;
-    background-size: cover;
     position: fixed;
-}
+    background-size: cover;
 
-/* Styling for the "WELCOME TO BUSQUERY" text */
-.top {
+   
+ }
+
+.top{
     text-align: center;
-    height: 7vh;
-    background: linear-gradient(to right, violet, rgb(109, 109, 204));
+    height:7vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right,violet,rgb(109, 109, 204));
     font-size: xx-large;
-    font-family: sans-serif, Verdana, Geneva;
+    font-family: sans-serif,Verdana, Geneva;
     font-weight: 600;
     color: white;
-    width: 100vw;
-    padding-top: 10px;
+   
+    width:100vw;
+    padding-top: 10px; ;
 }
 
-/* Styling for the main content container */
-.outer {
-    padding: 8px;
-    position: relative;
-    width: 35vw;
-    margin: 5vh 4vw 0 4vw; /* Simplify margin property */
-    border: 5px double black;
-    height: 60vh;
-    font-family: Arial, sans-serif;
-}
-
-/* Styling for the heading section */
-.head {
+.head{
     font-size: 50px;
+    align-items: center;
+    opacity: 1;
     text-align: center;
+    display: flex;
     color: blue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: right;
+    
 }
 
-/* Styling for the GT logo */
-.GT {
+.GT{
     display: inline-block;
+    
+    opacity: 1;
+    align-items: center;
     margin-right: 0;
-    align-items: center;
     justify-content: center;
-    opacity: 1;
+
 }
 
-/* Styling for the logo */
-.logo {
+.logo{
     display: inline-block;
-    align-items: flex-end;
+    align-items: right;
     display: flex;
     opacity: 1;
+    
+
+
+
 }
 
-/* Styling for the heading title */
-.headtitle {
+.headtitle{
+    
+    margin-left: 13.7%;
+    margin-right: 13.7%;
     font-size: xx-large;
-    margin: 0 13.7%;
 }
 
-/* Styling for the opaque content container */
-.opaque {
+.opaque{
     padding: 8px;
     position: relative;
+    margin-left: 2vw;
+    border-top-right-radius:  3vw;
     width: 35vw;
-    border: 5px double black;
+    border-left: 5px double black;
+    border-right: 5px double black ;
+    border-top: 5px double black ;
     color: antiquewhite;
-    margin-top: 5vh;
+    margin-top:5vh ;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height: fit-content;
+    height: 14vh;
+    background-color: rgb(229, 253, 229);
+    opacity: 0.9;
 }
 
-/* Common styles for form elements */
+.outer{
+    padding: 8px;
+    position: relative;
+    font-family: Arial, sans-serif;
+    background-color: rgb(233, 233, 238);
+    opacity: 0.85;
+    width: 35vw;
+    border-left: 5px double black ;
+    border-right: 5px double black ;
+    border-bottom: 5px double black ;
+    margin-left: 2vw;
+    height: 45vh;
+    border-bottom-right-radius: 3vw;
+    border-bottom-left-radius: 3vw;
+}
+
+
+.ticket-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
 input, select {
-    padding: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;;
     border: 1px solid #ccc;
     border-radius: 5px;
-    outline: #0056b3 solid 2px;
-    width: 100%;
+    outline: #0056b3 solid 1px;
+    width: 70%;
+    opacity: 1;
 }
 
 input:focus {
-    border: 2px solid blue;
-}
+    border: 2px solid blue; /* Change the border color to blue when the input is clicked */
+  }
 
-/* Styling for the "Book Ticket" button */
+
 .book-ticket-button {
     width: 70%;
     padding: 10px;
@@ -126,7 +176,15 @@ input:focus {
     margin-top: 10px;
 }
 
-/* Hover effect for the button */
 .book-ticket-button:hover {
     background-color: #0056b3;
 }
+   
+#passenger_gender{
+    width: 96%;
+}
+
+li:hover{
+    color: white;
+}
+
