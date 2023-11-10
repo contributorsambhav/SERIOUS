@@ -1,0 +1,9 @@
+The name of client is Amb 
+ Age is  19
+ Gender is Male 
+ from station Amb  
+ to station Nehrian 
+ date of journey 2023-11-16 
+ 
+ 
+ 
