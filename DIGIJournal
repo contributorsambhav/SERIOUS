@@ -1,0 +1,23 @@
+January 1:
+Started reading react documentation from "Learn" section
+Read Chapter : Describing the UI :
+    First component ,
+    Importing and exporting Components,
+    Writing Markup with JSX
+
+
+January 2:
+Fixed the react-scripts permission problem
+Upgraded Node js to v 20.10.0 and NPM to 10.2.3
+Made the development server run
+Fixed the Chesspiece component redundancy
+Read Chapter : Describing the UI :
+    JavaScript in JSX with Curly Braces,
+    Passing Props to a Component
+    Conditional Rendering
+    Rendering Lists
+    Keeping Components Pure
+    Understanding Your UI as a Tree
+
+
+ 
