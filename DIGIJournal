@@ -20,4 +20,31 @@ Read Chapter : Describing the UI :
     Understanding Your UI as a Tree
 
 
+January 3 
+    Read about WebSockets and how they differ from Socket.IO
+
+
+January 4
+    Started chatapp project 
+        Created the initial look of the page
+        Express server
+        Integrated SOCKET.IO
+        Event emitters added
+
+January 5
+    Could not do anything due to semester registration
+
+January 6
+    Learnt about broadcasting events
+    Events broadcasted to client side
+    Disconnection feature to client
+    Learnt about SQLite
+    Handeled disconnections with SQLite
+    
+
+
+
+
+    
+
  
